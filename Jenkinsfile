@@ -1,3 +1,4 @@
+#!groovy
 pipelineJob('prova') {
   node(){
     stage ('pipelines'){
