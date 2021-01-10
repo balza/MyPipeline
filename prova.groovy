@@ -1,6 +1,6 @@
-String jobPrefix = 'matrix'
+String jobPrefix = 'balza'
 
-pipelineJob(jobPrefix + '-numbers-bff') {
+pipelineJob("${jobPrefix}") {
     description('Build the Matrix Numbers BFF')
-    sh 'mvn --version'
+    echo "ciao"
 }
