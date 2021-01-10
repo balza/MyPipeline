@@ -1,6 +1,6 @@
-String jobPrefix = 'balza'
-
-pipelineJob("${jobPrefix}") {
-    description('Build the Matrix Numbers BFF')
+#!groovy
+def execute() {
     echo "ciao"
 }
+
+return this

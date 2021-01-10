@@ -1,7 +1,8 @@
-def pipeline
-
-node('maven') {
-    ws ('pipelines'){
-        pipeline = load 'prova'
+pipelineJob('prova') {
+  node(){
+    stage ('pipelines'){
+        def pipeline = load 'prova'
+        pipeline.execute()
     }
+  }
 }
